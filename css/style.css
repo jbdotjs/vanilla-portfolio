@@ -135,8 +135,8 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-  }
+  /* .container {
+  } */
   .headline {
     flex-direction: column;
     flex-wrap: nowrap;
