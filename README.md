@@ -10,4 +10,4 @@
 
 ### Demo
 
-(Demo)[https://talha-vanilla-portfolio.netlify.app/]
+[Demo](https://talha-vanilla-portfolio.netlify.app/)
