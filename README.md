@@ -8,4 +8,6 @@
 - DOM Manipulation with Vanilla ES6+ JS
 - Adding scripts via CDN
 
-### (Demo)[https://talha-vanilla-portfolio.netlify.app/]
+### Demo
+
+(Demo)[https://talha-vanilla-portfolio.netlify.app/]
