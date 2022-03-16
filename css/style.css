@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: #333;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 50px;
+  letter-spacing: -4px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+#about,
+#contact,
+#cv {
+  transition: 100ms all linear;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 100ms all linear;
+}
+a:hover,
+#about:hover,
+#contact:hover,
+#cv:hover {
+  color: rgb(31, 131, 98);
+  /* transform: scale(1.2); */
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--text-color);
+  }
+}
+
+::selection {
+  background: var(--text-color);
+  color: #fff;
+}
+
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
+
+/* TYPER RELATED */
+#main-cli {
+  color: var(--text-color);
+  /* margin: 20px 0 0 0; */
+  margin-top: -10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: start;
+  width: 500px;
+  flex-wrap: nowrap;
+}
+.headline {
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+  }
+  .headline {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #main-cli {
+    line-height: 0.5;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
